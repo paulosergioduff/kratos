@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<!-- <script src="../lib/..."></script> -->
+	<!--<link rel="stylesheet" type="text/css" href="../lib/..">-->
+
+	<!-- Módulo angular/jquery/ etc -->
+		<script type="text/javascript" src="../lib/js/angular/angular.1.6.js"></script>
+		<script type="text/javascript" src="../lib/js/jquery/jquery-3.2.1.min.js"></script>
+
+	<!-- Dependências bootstrap (básico) -->
+		<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+		<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script> 
+				
+
+	<!-- Dependências hightlight sintaxe -->
+		<script src="../lib/js/highlight/highlight.pack.js"></script>
+		<link rel="stylesheet" type="text/css" href="../lib/js/highlight/styles/monokai-sublime.css">
+		<script>hljs.initHighlightingOnLoad();</script>
+
+	<!-- Social Network -->
+		<link rel="stylesheet" type="text/css" href="../lib/css/socialNetwork.css">
+
+
+
+
+
+	<title></title>
+</head>
+<body ng-app>
+
+<h1>Minha página de dependências</h1>
+<input type="input" ng-model="resultado" >
+		<pre ><code class="html" id="codigo" contenteditable="true">
+		&lt;html&gt;
+		&lt;head&gt;
+		    &lt;title&gt;&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+
+				{{resultado}}
+
+		&lt;/body&gt;
+		&lt;/html&gt;
+		    </code></pre>
+
+    Resultado: {{servico}} - {{resultadoRecebido}}<br>
+
+    <pre class="html">
+    	{{resultado}}
+    </pre>
+
+    <div id="caixaDeMensagem">Mensagem</div>
+    <div id="doc">Mensagem</div>
+
+
+</body>
+</html>
