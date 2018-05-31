@@ -18,7 +18,7 @@ class InsertMetodo{
 			$metodoAtual = new $this->metodo($this->campos, $this->valores, $banco, $tabela);
 		}
 			else{
-				//echo "$arquivo não encontrado<br>";
+				echo "$arquivo não encontrado<br>";
 			}
 		
 		

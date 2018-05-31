@@ -2,12 +2,13 @@
 
 //include "classesTestes.php";
 include "../SRP/insertMetodo.controller.php";
+include "../kratosConfig.php";
 
 $campos = '`varchar2`, `varchar3`, `varchar4`';
-$valores = "'Escolhendo banco', '22', '79kg'";
+$valores = "'Nascimento do kratos (no insert pelo menos)', '22', '79kg'";
 
 
-$app = new InsertMetodo("$campos", $valores, 'PDOinsert', 'jasonbd','feed');
+$app = new InsertMetodo("$campos", $valores, 'insertMySQLi', 'jasonbd','homol2');
 
 
 
