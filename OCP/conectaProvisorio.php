@@ -1,8 +1,9 @@
 <?php
 
-$user = 'root';
-$senha = 'root';
+$usuario = USER_SYS;
+$senha = PASSWORD_SYS;
+$host = HOST_SYS;
 
-$pdo = new PDO("mysql:host=localhost;dbname=$banco", 'root', '');
+$pdo = new PDO("mysql:host=$host;dbname=$banco", "$usuario", "$senha");
 
 ?>
