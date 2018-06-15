@@ -10,10 +10,9 @@ class PDOupdate{
 
 	public function __construct($id, $campo, $novoValor, $tabela, $banco)
 	{
-		$this->id= $id;
-		$this->tabela = $tabela;
-		$this->banco  = $banco;
-		$this->campo  = $campo ;
+		$this->tabela = addslashes($tabela);
+		$this->banco  = addslashes($banco);
+		$this->campo  = addslashes($campo); // É necessário verificar se essas variáveis estão sendo filtradas
 		$this->update = $novoValor;
 		//echo "<br><B>PDOupdate</b><BR>Atualizar id <b>$id</b>";
 		//echo "<br>Exibir campo <b>$campo</b>";
@@ -23,8 +22,9 @@ class PDOupdate{
 	}
 }
 
+$novoValor = htmlspecialchars($novoValor);
 
-
+echo $novoValor . "<p>";
 
 $sql = "UPDATE $tabela
 SET $campo='$novoValor' WHERE id=$id;";

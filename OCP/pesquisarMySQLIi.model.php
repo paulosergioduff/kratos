@@ -11,15 +11,16 @@ class pesquisarMySQLIi{
   
   function __construct($termo, $campos, $banco, $tabela)
   {
-    $this->campos = $campos; 
-    $this->termo = $termo;  
-    $this->banco  = $banco;  
-    $this->tabela = $tabela; 
+    $this->campos = addslashes($campos); 
+    $this->termo = addslashes($termo);  
+    $this->banco  = addslashes($banco);  
+    $this->tabela = addslashes($tabela); 
     
   }
 }
 
 require("conectaMySQLi.php");
+
 
 
 $itensEncontrados = 0;
@@ -29,12 +30,12 @@ $itensEncontrados = 0;
 	$pesquisar = $termo;
 
 
-    $result_codigos = "SELECT * FROM $tabela WHERE titulo LIKE '%$pesquisar%'";
+    $result_codigos = "SELECT * FROM $tabela WHERE $campos LIKE '%$pesquisar%'";
 
     $resultado_codigos = mysqli_query($conn, $result_codigos );
     
     while($rows_codigos = mysqli_fetch_array($resultado_codigos)){
-     
+     	
 
         $itensEncontrados++;
     }

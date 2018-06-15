@@ -6,7 +6,7 @@ include "../SRP/buscaTermo.model.php";
 
 $termo = "banco";
 
-$app = new buscaTermoPorMetodo('com', 'php', 'pesquisarMySQLIi', 'codebrain','php');
+$app = new buscaTermoPorMetodo('gmail', 'varchar3', 'pesquisarMySQLIi', 'kratos','cadastro');
 
 ?>
 </body>
