@@ -1,5 +1,5 @@
 <?php
-include ("../OCP/conectaProvisorio.php");
+include ("../OCP/conectaPDO.php");
 class PDOdelete{
 	public function __construct($id, $tabela, $banco)
 	{

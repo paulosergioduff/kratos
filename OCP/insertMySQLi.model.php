@@ -1,6 +1,6 @@
 <?php
 
-include ("conectaProvisorio.php");
+require_once "../kratosConfig.php";
 
 class insertMySQLi{
 	private $id;
@@ -19,16 +19,15 @@ class insertMySQLi{
 }
 
 
-echo "<p>$banco";
-echo "<p>$tabela";
-echo "<p>$campos";
-echo "<p>$valores";
-echo "<p>$tabela";
+$banco_sistema =  DATA_SYS;
+$usuario_sistema =  USER_SYS;
+$password_sistema =  PASSWORD_SYS;
+$host_sistema =  HOST_SYS;
 
-$conn = mysqli_connect('localhost', 'root', 'root', $banco);
+$conn = mysqli_connect($host_sistema, $usuario_sistema, $password_sistema, $banco_sistema);
 // Check connection
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error()); // Estudar novos métodos de retornar
 }
 	else{
 		echo '<p>Conectado com sucesso';

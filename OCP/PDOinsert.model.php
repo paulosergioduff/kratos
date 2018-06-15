@@ -1,6 +1,6 @@
 <?php
 
-include ("conectaProvisorio.php");
+include ("conectaPDO.php");
 
 class PDOinsert{
 	private $id;

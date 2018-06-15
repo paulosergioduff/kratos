@@ -1,5 +1,6 @@
 <?php  header('Content-type: text/html; charset=UTF-8');
 
+require_once "../kratosConfig.php";
 
 function falhaDeCadastro(){
 
@@ -37,12 +38,14 @@ class pesquisarMySQLIi{
   }
 }
 
-$servername = "localhost";
-$username = "root";
-$password = ""; 
+$banco_sistema =  DATA_SYS;
+$usuario_sistema =  USER_SYS;
+$password_sistema =  PASSWORD_SYS;
+$host_sistema =  HOST_SYS;
+
 //$dbname = "codebrain";
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $banco);
+$conn = mysqli_connect($host_sistema, $usuario_sistema, $password_sistema, $banco_sistema);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

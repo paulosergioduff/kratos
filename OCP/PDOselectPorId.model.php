@@ -1,6 +1,6 @@
 <?php
 
-include ("conectaProvisorio.php");
+include ("conectaPDO.php");
 
 class PDOselectPorId{
 	private $id;

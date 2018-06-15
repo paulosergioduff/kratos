@@ -6,7 +6,7 @@
 	<title></title>
 </head>
 <body>
-	<a href="minhasCoisas">Minhas coisas</a> - <a href="logoff">sair</a><br>
+	<a href="minhasCoisas.php">Minhas coisas</a> - <a href="logoff.php">sair</a><br>
 
 	<form action="post" method="POST">
 		<h3>Achou algo legal na internet?</h3>

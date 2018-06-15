@@ -10,7 +10,7 @@ $termo = "banco";
 
 $app = new buscaTermoPorMetodo($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'jasonbd','cadastro');
 if (isset($_SESSION['status']) AND $_SESSION['status'] == "logado") {
-	$redirect = "feed";
+	$redirect = "feed.php";
 	header("location:$redirect");
 }
 

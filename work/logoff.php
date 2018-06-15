@@ -7,7 +7,7 @@ session_unset();
 
 echo "Você saiu!";
 
-$redirect = "index";
+$redirect = "index.php";
 header("location:$redirect");
 
 

@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `jasonbd`
+-- Database: `kratos`
 --
-CREATE DATABASE IF NOT EXISTS `jasonbd` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `jasonbd`;
+CREATE DATABASE IF NOT EXISTS `kratos` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `kratos`;
 
 -- --------------------------------------------------------
 
@@ -655,7 +655,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"sistemaBD\",\"table\":\"feed\"},{\"db\":\"jasonBD\",\"table\":\"feed\"}]');
+('root', '[{\"db\":\"sistemaBD\",\"table\":\"feed\"},{\"db\":\"kratos\",\"table\":\"feed\"}]');
 
 -- --------------------------------------------------------
 

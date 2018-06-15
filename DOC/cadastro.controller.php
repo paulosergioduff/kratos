@@ -3,8 +3,8 @@
 //include "classesTestes.php";
 include "../SRP/cadastro.model.php";
 
-$usuario = $_POST['usuario'];
-$senhaForm   = $_POST['senha'];
+$usuario = 'admin';// $_POST['usuario'];
+$senhaForm   = 'admin';//$_POST['senha'];
 
 $termo = "banco";
 

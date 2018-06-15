@@ -15,7 +15,7 @@ class PDOselectTotal{
   }
 }
 
-include ("conectaProvisorio.php");
+include ("conectaPDO.php");
 
 $sql = "SELECT $campo FROM $tabela;";
 
