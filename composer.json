@@ -1,0 +1,13 @@
+{
+    "name": "kratos",
+    "description": "Todo as dependencias do projeto kratos",
+    "authors": [
+        {
+            "name": "Paulo Sérgio Duff",
+            "email": "duff25rj@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.8"
+    }
+}
