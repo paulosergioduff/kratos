@@ -1,0 +1,11 @@
+{"usuarios":[
+  {"nome":"Paulo","idade":"32","email":"paulo@teste.com", "profissao":"dev"},
+  {"nome":"Maria","idade":"22","email":"maria@teste.com", "profissao":"front"},
+  {"nome":"Miranda","idade":"43","email":"carlos@teste.com", "profissao":"dir"}  
+  ],
+ "tabela2":[
+  {"nome":"Pinha","idade":"32","email":"paulo@teste.com", "profissao":"dev"},
+  {"nome":"Jaguncio","idade":"22","email":"maria@teste.com", "profissao":"front"},
+  {"nome":"Eduarda","idade":"43","email":"carlos@teste.com", "profissao":"dir"}  
+  ]
+}
