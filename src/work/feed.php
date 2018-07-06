@@ -1,6 +1,6 @@
 <?php 
 
-require_once "../jasonConfig.php";
+require_once "../kratosConfig.php";
 
 include "$path/selectTotal.model.php";
 

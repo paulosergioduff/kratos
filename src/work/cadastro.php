@@ -8,7 +8,7 @@ $senhaForm   = $_POST['senha'];
 
 $termo = "banco";
 
-$app = new buscaTermoPorMetodo($usuario, $senhaForm, 'varchar1', 'cadastroMySQLIi', 'jasonbd','cadastro');
+$app = new buscaTermoPorMetodo($usuario, $senhaForm, 'varchar1', 'cadastroMySQLIi', 'kratos','cadastro');
 
 ?>
 </body>
