@@ -20,6 +20,10 @@ class pesquisarMySQLIi{
   private $banco;
   private $tabela;
   public $retornoConsulta;
+
+  public function erroLogin(){
+    echo "hello erro";
+  }
   
   function __construct($termo, $senha, $campos, $banco, $tabela)
   {
@@ -28,11 +32,8 @@ class pesquisarMySQLIi{
     $this->banco  = $banco;  
     $this->tabela = $tabela; 
     $this->senha = $senha; 
-    
-  }
-}
 
-require_once "../kratosConfig.php";
+    require_once "../kratosConfig.php";
 
 $banco_sistema =  DATA_SYS;
 $usuario_sistema =  USER_SYS;
@@ -51,9 +52,9 @@ if (!$conn) {
 $itensEncontrados = 0;
 $buscaSenha = 0;
 
-	//$tabela = $tabela;
-	
-	$pesquisar = $termo;
+  //$tabela = $tabela;
+  
+  $pesquisar = $termo;
 
 
     $result_codigos = "SELECT * FROM $tabela WHERE $campos LIKE '%$pesquisar%'";
@@ -78,9 +79,13 @@ $buscaSenha = 0;
 
         else
         {
-            falhaDeLogin();
-            
+          //$this->erroLogin();            
         }
+    
+  }
+}
+
+
 
 
 

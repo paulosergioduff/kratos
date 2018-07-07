@@ -8,7 +8,15 @@ $senhaForm   = $_POST['senha'];
 
 $termo = "banco";
 
-$app = new buscaTermoPorMetodo($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'jasonbd','cadastro');
+class login extends buscaTermoPorMetodo{
+	  public function erroLogin(){
+    echo "novo erro";
+  }
+}
+
+$app = new login($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'kratos','cadastro');
+
+$app->erroLogin();
 
 ?>
 </body>
