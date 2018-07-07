@@ -10,9 +10,11 @@ define('PASSWORD_SYS', 'root');
 define('HOST_SYS', 'localhost');
 define('DATA_SYS', 'kratos');
 
-$novodado = caminho . $path;
+function falhaDeLogin(){
 
-//echo $novodado;
+  echo "Falha na autentifiação";
+
+}
 
 
 ?>

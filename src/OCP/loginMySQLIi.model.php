@@ -1,10 +1,6 @@
 <?php  header('Content-type: text/html; charset=UTF-8');
 
-function falhaDeLogin(){
 
-  echo "Falha na autentifiação";
-
-}
 
 function logar($user){
 

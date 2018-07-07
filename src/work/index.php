@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<form action="login.php" method="POST">
-	Usuario<input type="text" name="usuario"><br>
-	Senha <input type="password" name="senha"><br>
-	<input type="submit" value="enviar">
-</form><br>
-<a href="telaCadastro.php">Cadastrar-se</a>
-</body>
-</html>
+<?php 
+
+session_start();
+
+if(isset($_SESSION['status']))
+		{
+			if($_SESSION['status'] = 'logado')
+			{
+				include "painel.view.php";
+			}
+				else
+				{
+					include "view/home.php";
+				}
+		}
+
+		else
+		{
+			include "view/home.php";
+		}
+
+
+?>

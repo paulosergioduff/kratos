@@ -8,9 +8,15 @@ $senhaForm   = $_POST['senha'];
 
 $termo = "banco";
 
-$app = new buscaTermoPorMetodo($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'kratos','cadastro');
+class login extends buscaTermoPorMetodo{
+
+
+}
+
+
+$app = new login($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'kratos','cadastro');
 if (isset($_SESSION['status']) AND $_SESSION['status'] == "logado") {
-	$redirect = "feed.php";
+	$redirect = "feed.view.php";
 	header("location:$redirect");
 }
 
