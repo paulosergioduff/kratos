@@ -12,11 +12,17 @@ class login extends buscaTermoPorMetodo{
 	  public function erroLogin(){
     echo "novo erro";
   }
+
+   public function sucessoLogin(){
+    echo $_SESSION['usuario']."Logado com sucesso NOVA STRING";
+  }
 }
 
 $app = new login($usuario, $senhaForm, 'varchar1', 'loginMySQLIi', 'kratos','cadastro');
 
-$app->erroLogin();
+$app->sucessoLogin();
+
+
 
 ?>
 </body>

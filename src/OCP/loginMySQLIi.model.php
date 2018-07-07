@@ -1,19 +1,5 @@
 <?php  header('Content-type: text/html; charset=UTF-8');
 
-
-
-function logar($user){
-
-  session_start();
-  $_SESSION['status'] = 'logado';
-  $_SESSION['usuario'] = $user;
-
-  echo $_SESSION['usuario']."Logado com sucesso ";
-
-}
-
-
-
 class pesquisarMySQLIi{
   private $campos;
   private $termo;
@@ -24,6 +10,18 @@ class pesquisarMySQLIi{
   public function erroLogin(){
     echo "hello erro";
   }
+
+  public function sucessoLogin(){
+    echo $_SESSION['usuario']."Logado com sucesso ";
+  }
+
+  public function logar($user){
+
+  session_start();
+  $_SESSION['status'] = 'logado';
+  $_SESSION['usuario'] = $user;  
+
+}
   
   function __construct($termo, $senha, $campos, $banco, $tabela)
   {
@@ -73,13 +71,15 @@ $buscaSenha = 0;
     if ($itensEncontrados == 1 AND $termo == $usuarioprocurado AND $senhaprocurada == $senha) {
         # Acima, verifica se existe apenas 1 registro da query, e compara dados recebidos com a consulta
         //echo "<p>pronto para logar<br>";
-         logar($usuarioprocurado);
+         $this->logar($usuarioprocurado);
+        // $this->sucessoLogin();
         
     }
 
         else
         {
-          //$this->erroLogin();            
+        //  $this->erroLogin();  
+
         }
     
   }
